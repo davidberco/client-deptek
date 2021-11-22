@@ -25,7 +25,8 @@ export default ({ children }) => {
       </header>
       {children}
       <footer className="site-footer">
-        <p>&copy; {new Date().getFullYear()} Delog &bull; Crafted with <span role="img" aria-label="love">❤️</span> by <a href="https://w3layouts.com">W3Layouts</a></p>
+        <p>Deptek LLC, information related to the company, telephone number, email, or something pending ask to Juan Ivan</p>
+        <p>&copy; {new Date().getFullYear()} Deptek LLC &bull; WebDev by <a href="https://bercostudio.com">BercoStudio</a></p>
       </footer>
     </div>
   )
