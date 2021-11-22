@@ -1,10 +1,10 @@
 ---
 template: BlogPost
-path: /remark-kitchen-sink
+path: /hello-world
 date: 2020-02-21T12:12:25.364Z
 title: 'Inteligencia de Datos
 '
-thumbnail: /assets/image-6.jpg
+thumbnail: /assets/data-analytics.jpg
 ---
 
 # h1 Heading 8-)

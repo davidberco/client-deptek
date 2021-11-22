@@ -1,9 +1,9 @@
 ---
 template: BlogPost
-path: /video-post
+path: /hello-world
 date: 2020-02-20T15:05:49.332Z
 title: 'Soluciones Satelitales'
-thumbnail: /assets/image-1.jpg
+thumbnail: /assets/data-analytics.jpg
 ---
 
 I have embedded a youtude video in this page. By adding HTML to the markdown

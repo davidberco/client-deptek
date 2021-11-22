@@ -16,13 +16,16 @@ const ContactPage = ({
       </Helmet>
       <div className="two-grids -contact">
         <div className="post-thumbnail" style={{backgroundImage: `url('/assets/alexander-andrews-HgUDpaGPTEA-unsplash.jpg')`, marginBottom: 0}}>
-          <h1 className="post-title">Get in Touch</h1>
-          <p>Let me help you kick start your next project &rarr;</p>
+          <h1 className="post-title">Contacto</h1>
+          <p>Una tagline que corta y precisa, Juan Ivan</p>
+          <p><a href="mailto:mail@thedeptek.com">mail@thedeptek.com</a></p>
         </div>
         <div>
-          <form className="form-container" action="https://sendmail.w3layouts.com/SubmitContactForm" method="post">
+        <p>Aqui va contact form. Contact Form visibility: off not working yet, config on CMS.</p>
+
+          {/* <form className="form-container" action="https://sendmail.w3layouts.com/SubmitContactForm" method="post">
             <div>
-              <label htmlFor="w3lName">Name</label>
+              <label htmlFor="w3lName">Nombre</label>
               <input type="text" name="w3lName" id="w3lName"/>
             </div>
             <div>
@@ -30,17 +33,17 @@ const ContactPage = ({
               <input type="email" name="w3lSender" id="w3lSender"/>
             </div>
             <div>
-              <label htmlFor="w3lSubject">Subject</label>
+              <label htmlFor="w3lSubject">Título</label>
               <input type="text" name="w3lSubject" id="w3lSubject"/>
             </div>
             <div>
-              <label htmlFor="w3lMessage">Message</label>
+              <label htmlFor="w3lMessage">Mensaje</label>
               <textarea name="w3lMessage" id="w3lMessage"></textarea>
             </div>
             <div style={{display: "flex", justifyContent: "flex-end"}}>
               <input type="submit" className="button -primary" style={{marginRight: 0}} />
             </div>
-          </form>
+          </form> */}
         </div>
       </div>
     </Layout>
