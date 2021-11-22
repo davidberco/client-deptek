@@ -18,7 +18,9 @@ export default ({ children }) => {
   return (
     <div className="site-wrapper">
       <header className="site-header">
-      <img className="logo-image" src='/assets/logoOrange@3x.png' alt='logotype-deptek'></img>
+      <Link to="/">
+        <img className="logo-image" src='/assets/logoOrange@3x.png' alt='logotype-deptek'></img>
+      </Link>
 
         {/* <div className="site-title">
           <Link to="/">{data.site.siteMetadata.title}</Link>
@@ -26,7 +28,9 @@ export default ({ children }) => {
         <Navigation />
       </header>
       {children}
+
       <footer className="site-footer">
+
         <p>Deptek LLC, information related to the company, telephone number, email, or something pending ask to Juan Ivan</p>
         <p>&copy; {new Date().getFullYear()} Deptek LLC &bull; WebDev by <a href="https://bercostudio.com">BercoStudio</a></p>
       </footer>
