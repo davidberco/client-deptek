@@ -16,7 +16,6 @@ export default () => (
     `}
     render={data => (
       <div className="hero-header">
-      <img src='/assets/circles-light.png'></img>
         <div className="headline">{data.site.siteMetadata.home.title}</div>
         <div 
           className="primary-content" 

@@ -18,9 +18,11 @@ export default ({ children }) => {
   return (
     <div className="site-wrapper">
       <header className="site-header">
-        <div className="site-title">
+      <img className="logo-image" src='/assets/logoOrange@3x.png' alt='logotype-deptek'></img>
+
+        {/* <div className="site-title">
           <Link to="/">{data.site.siteMetadata.title}</Link>
-        </div>
+        </div> */}
         <Navigation />
       </header>
       {children}
