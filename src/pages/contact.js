@@ -17,8 +17,9 @@ const ContactPage = ({
       <div className="two-grids -contact">
         <div className="post-thumbnail" style={{backgroundImage: `url('/assets/alexander-andrews-HgUDpaGPTEA-unsplash.jpg')`, marginBottom: 0}}>
           <h1 className="post-title">Contacto</h1>
-          <p>Una tagline que corta y precisa, Juan Ivan</p>
-          <p><a href="mailto:mail@thedeptek.com">mail@thedeptek.com</a></p>
+          <p><a href="mailto:juan.cueva@thedeptek.com">juan.cueva@thedeptek.com</a></p>
+          <p><a href="tel:+17867908720">+1 (786)790-8720</a></p>
+          <p>Address: 2655 Lejeune Road Suit 902 Coral Gables, FL 33134</p>
         </div>
         <div>
         <p>Aqui va contact form. Contact Form visibility: off not working yet, config on CMS.</p>

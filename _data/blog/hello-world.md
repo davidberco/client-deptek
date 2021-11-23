@@ -4,7 +4,7 @@ path: /hello-world
 date: 2020-02-20T07:08:53.137Z
 title: 'Cloud & Media Solutions
 '
-thumbnail: '/assets/image-5.jpg'
+thumbnail: '/assets/cloudmedia.jpg'
 metaDescription: Meta description for Hello World
 ---
 
