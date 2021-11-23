@@ -3,7 +3,7 @@ template: BlogPost
 path: /hello-world
 date: 2020-02-20T15:05:49.332Z
 title: 'Soluciones Satelitales'
-thumbnail: /assets/data-analytics.jpg
+thumbnail: /assets/satelite.jpg
 ---
 
 I have embedded a youtude video in this page. By adding HTML to the markdown

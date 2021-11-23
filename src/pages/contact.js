@@ -23,7 +23,7 @@ const ContactPage = ({
         <div>
         <p>Aqui va contact form. Contact Form visibility: off not working yet, config on CMS.</p>
 
-          {/* <form className="form-container" action="https://sendmail.w3layouts.com/SubmitContactForm" method="post">
+          <form name="contact-form-deptek" className="form-container" action="/thanks" method="POST" data-netlify="true">
             <div>
               <label htmlFor="w3lName">Nombre</label>
               <input type="text" name="w3lName" id="w3lName"/>
@@ -43,7 +43,7 @@ const ContactPage = ({
             <div style={{display: "flex", justifyContent: "flex-end"}}>
               <input type="submit" className="button -primary" style={{marginRight: 0}} />
             </div>
-          </form> */}
+          </form>
         </div>
       </div>
     </Layout>
