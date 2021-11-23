@@ -1,12 +1,25 @@
 ---
 template: BlogPost
-path: /hello-world
+path: /data-analytics
 date: 2020-02-21T12:12:25.364Z
 title: 'Inteligencia de Datos
 '
 thumbnail: /assets/data-analytics.jpg
 ---
 
+# h1 Heading
+
+## h2 Heading
+
+### h3 Heading
+
+#### h4 Heading
+
+##### h5 Heading
+
+###### h6 Heading
+
+<!--
 # h1 Heading 8-)
 
 ## h2 Heading
@@ -455,4 +468,4 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 
 ### [Custom containers](https://github.com/markdown-it/markdown-it-container)
 
-::: warning _here be dragons_ :::
+::: warning _here be dragons_ ::: -->

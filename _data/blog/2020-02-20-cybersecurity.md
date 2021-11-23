@@ -1,6 +1,6 @@
 ---
 template: BlogPost
-path: /hello-world
+path: /cybersecurity
 date: 2020-02-20T15:08:12.174Z
 title: 'Ciberseguridad & Seguridad Informática'
 thumbnail: /assets/cybersec.jpg
