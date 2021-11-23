@@ -1,7 +1,7 @@
 backend:
   name: github
   # change repo to your git repository url
-  repo: /davidberco/client-deptek.git
+  repo: github.com/davidberco/client-deptek
 
 media_folder: static/assets
 public_folder: /assets
