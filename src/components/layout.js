@@ -31,7 +31,7 @@ export default ({ children }) => {
 
       <footer className="site-footer">
 
-        <p>Deptek LLC, information related to the company, telephone number, email, or something pending ask to Juan Ivan</p>
+        <p>Deptek LLC, Address: 2655 Lejeune Road Suit 902 Coral Gables, FL 33134. Tel: <a href="tel:+17867908720">+1 (786)790-8720</a></p>
         <p>&copy; {new Date().getFullYear()} Deptek LLC &bull; WebDev by <a href="https://bercostudio.com">BercoStudio</a></p>
       </footer>
     </div>
