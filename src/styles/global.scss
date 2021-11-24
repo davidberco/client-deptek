@@ -192,7 +192,7 @@ a {
   display: grid;
   align-content: center;
   position: relative;
-  padding: 18px;
+  padding: 8px;
   overflow: hidden;
   &:before {
     content: '';
@@ -312,6 +312,9 @@ a {
   .grids {
     grid-template-columns: 1fr 1fr;
   }
+  .map {
+    width: 60vw;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .grids {
@@ -319,8 +322,14 @@ a {
   }
   .two-grids {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr; // we have 1fr 1fr to show the contact form properly
     grid-gap: 64px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .map {
+    width: 80vw;
   }
 }
 
