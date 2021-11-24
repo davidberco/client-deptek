@@ -24,15 +24,13 @@ const ContactPage = ({
           <div className="">
             <iframe className="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.2547890273067!2d-80.2649842407598!3d25.743592152950463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b790e2626c55%3A0x3fd119306dc52914!2s2655%20S%20Le%20Jeune%20Rd%20%23902%2C%20Coral%20Gables%2C%20FL%2033134!5e0!3m2!1sfr!2sus!4v1637708128719!5m2!1sfr!2sus"
-            style={{ border: 0 }}
-            
             loading="lazy"
-            width={320}
-            height={320}
+            width={300}
+            height={300}
           />
           </div>
         </div>
-        <div>
+        {/* <div>
           <form name="contact-form-deptek" className="form-container" action="/thanks" method="POST" data-netlify="true" data-netlify-recaptcha="true">
             <div>
               <label htmlFor="w3lName">Name</label>
@@ -55,7 +53,7 @@ const ContactPage = ({
             </div>
           </form>
 
-        </div>
+        </div> */}
       </div>
     </Layout>
   )
