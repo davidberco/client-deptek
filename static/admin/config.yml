@@ -1,6 +1,5 @@
 backend:
   name: git-gateway
-  # change repo to your git repository url
   repo: https://github.com/davidberco/client-deptek
 
 media_folder: static/assets

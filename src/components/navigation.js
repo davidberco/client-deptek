@@ -4,7 +4,7 @@ import {Link} from "gatsby"
 
 export default (props) => (
   <nav className="navigation"> 
-    <Link to="/contact">Contacto <span role="img" aria-label="love">&#8594;</span>
+    <Link to="/contact">Contact <span role="img" aria-label="love">&#8594;</span>
 
 </Link>
     {/* <ThemeChanger/> */}

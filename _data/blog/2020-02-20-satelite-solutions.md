@@ -2,7 +2,7 @@
 template: BlogPost
 path: /hello-world
 date: 2020-02-20T15:05:49.332Z
-title: 'Soluciones Satelitales'
+title: 'Satellite Solutions'
 thumbnail: /assets/satelite.jpg
 ---
 

@@ -1,9 +1,8 @@
 ---
 template: BlogPost
 path: /data-analytics
-date: 2020-02-21T12:12:25.364Z
-title: 'Inteligencia de Datos
-'
+date: 2020-02-01T06:15:50.738Z
+title: 'Data Intelligence'
 thumbnail: /assets/data-analytics.jpg
 ---
 

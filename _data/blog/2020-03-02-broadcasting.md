@@ -1,7 +1,7 @@
 ---
 template: BlogPost
 path: /Broadcasting
-date: 2020-02-01T06:15:50.738Z
+date: 2020-02-21T12:12:25.364Z
 title: 'Broadcasting & Broadband'
 thumbnail: /assets/broadcasting.jpg
 metaDescription: df sdf df

@@ -73,8 +73,8 @@ a {
     max-width: 100%;
   }
   .logo-image {
-    min-height: 5em;
-    max-height: 5em;
+    min-height: 7em;
+    max-height: 7em;
   }
 }
 .navigation {
@@ -119,6 +119,7 @@ a {
   font-size: 36px;
   font-weight: 900;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 .button {
   padding: 18px 27px;
@@ -300,6 +301,11 @@ a {
       min-height: 240px !important;
     }
   }
+}
+
+.map {
+  border-radius: 0.3em;
+  box-shadow: 3px 2px 35px rgb(48, 48, 48);
 }
 /* Portrait and Landscape */
 @media only screen and (min-width: 768px) {

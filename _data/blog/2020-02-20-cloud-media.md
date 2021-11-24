@@ -2,8 +2,7 @@
 template: BlogPost
 path: /cloud-media
 date: 2020-02-20T07:08:53.137Z
-title: 'Cloud & Media Solutions
-'
+title: 'Cloud & Media Solutions'
 thumbnail: '/assets/cloudmedia.jpg'
 metaDescription: Meta description for Hello World
 ---
