@@ -27,8 +27,8 @@ const ContactPage = ({
             style={{ border: 0 }}
             
             loading="lazy"
-            width={360}
-            height={300}
+            width={320}
+            height={320}
           />
           </div>
         </div>
