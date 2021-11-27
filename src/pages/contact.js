@@ -31,7 +31,7 @@ const ContactPage = ({
           </div>
         </div>
         <div>
-          <form name="contact" method="POST" data-netlify="true">
+          <form name="netlifyForm" method="POST" data-netlify="true" action="/thanks">
             <p>
               <label>Your Name: <input type="text" name="name" /></label>   
             </p>
@@ -46,7 +46,7 @@ const ContactPage = ({
             </p>
           </form>
 
-          <form name="contact-form-deptek" className="form-container" action="https://formsubmit.co/3a930f605b9d3d0530a4441345f268fc" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          {/* <form name="contact-form-deptek" className="form-container" action="https://formsubmit.co/3a930f605b9d3d0530a4441345f268fc" method="POST" data-netlify="true" data-netlify-recaptcha="true">
             <div>
               <label htmlFor="w3lName">Name</label>
               <input type="text" name="name" id="name" placeholder="Name" data-validation-required-message="Please enter your name." required/>
@@ -70,7 +70,7 @@ const ContactPage = ({
 
               <input type="submit" name="submit" className="button primary" style={{marginRight: 0}} />
             </div>
-          </form>
+          </form> */}
 
         </div>
       </div>
