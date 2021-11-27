@@ -31,7 +31,7 @@ const ContactPage = ({
           </div>
         </div>
         <div>
-          <form name="netlifyForm" method="POST" data-netlify="true" action="/thanks">
+          {/* <form name="netlifyForm" method="POST" data-netlify="true" action="/thanks">
             <p>
               <label>Your Name: <input type="text" name="name" /></label>   
             </p>
@@ -44,9 +44,11 @@ const ContactPage = ({
             <p>
               <button type="submit">Send</button>
             </p>
-          </form>
+          </form> */}
 
-          {/* <form name="contact-form-deptek" className="form-container" action="https://formsubmit.co/3a930f605b9d3d0530a4441345f268fc" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+
+          <form name="contact-form-deptek" className="form-container" action="/thanks" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+            <input type="hidden" name="form-name" value="contact" />
             <div>
               <label htmlFor="w3lName">Name</label>
               <input type="text" name="name" id="name" placeholder="Name" data-validation-required-message="Please enter your name." required/>
@@ -64,13 +66,13 @@ const ContactPage = ({
               <textarea name="message" id="message" placeholder="Enter here your message..." required></textarea>
             </div>
             <div style={{display: "flex", justifyContent: "flex-end"}}>
-              <button className="button primary"></button>
+              {/* <button className="button primary"></button> */}
 
-              <input type="" className="button primary" name="input" id="" placeholder=""/>
+              {/* <input type="" className="button primary" name="input" id="" placeholder=""/> */}
 
               <input type="submit" name="submit" className="button primary" style={{marginRight: 0}} />
             </div>
-          </form> */}
+          </form>
 
         </div>
       </div>
