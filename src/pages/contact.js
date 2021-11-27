@@ -31,20 +31,6 @@ const ContactPage = ({
           </div>
         </div>
         <div>
-          {/* <form name="netlifyForm" method="POST" data-netlify="true" action="/thanks">
-            <p>
-              <label>Your Name: <input type="text" name="name" /></label>   
-            </p>
-            <p>
-              <label>Your Email: <input type="email" name="email" /></label>
-            </p>
-            <p>
-              <label>Message: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
-          </form> */}
 
           {/* <!-- A little help for the Netlify post-processing bots --> */}
           <form name="contact" netlify netlify-honeypot="bot-field" hidden>
@@ -53,7 +39,7 @@ const ContactPage = ({
             <textarea name="message"></textarea>
           </form>
 
-          <form name="contact-form-deptek" className="form-container" action="/thanks" method="POST" data-netlify="true" data-netlify-recaptcha="true" honeypot="bot-field">
+          <form name="contact-form-deptek" className="form-container" action="" method="POST" data-netlify="true" data-netlify-recaptcha="true" honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact" />
             <p class="hidden">
               <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
