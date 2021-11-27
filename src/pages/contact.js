@@ -48,7 +48,7 @@ const ContactPage = ({
 
 
           <form name="contact-form-deptek" className="form-container" action="/thanks" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="contact-form-deptek" value="contact" />
             <div>
               <label htmlFor="w3lName">Name</label>
               <input type="text" name="name" id="name" placeholder="Name" data-validation-required-message="Please enter your name." required/>
