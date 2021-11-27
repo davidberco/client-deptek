@@ -46,7 +46,7 @@ const ContactPage = ({
             </p>
           </form> */}
 
-          <!-- A little help for the Netlify post-processing bots -->
+          {/* <!-- A little help for the Netlify post-processing bots --> */}
           <form name="contact" netlify netlify-honeypot="bot-field" hidden>
             <input type="text" name="name" />
             <input type="email" name="email" />
