@@ -46,8 +46,6 @@ const ContactPage = ({
             </p>
           </form>
 
-
-{/* 
           <form name="contact-form-deptek" className="form-container" action="https://formsubmit.co/3a930f605b9d3d0530a4441345f268fc" method="POST" data-netlify="true" data-netlify-recaptcha="true">
             <div>
               <label htmlFor="w3lName">Name</label>
@@ -72,7 +70,7 @@ const ContactPage = ({
 
               <input type="submit" name="submit" className="button primary" style={{marginRight: 0}} />
             </div>
-          </form> */}
+          </form>
 
         </div>
       </div>
