@@ -46,6 +46,12 @@ const ContactPage = ({
             </p>
           </form> */}
 
+          <!-- A little help for the Netlify post-processing bots -->
+          <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+            <input type="text" name="name" />
+            <input type="email" name="email" />
+            <textarea name="message"></textarea>
+          </form>
 
           <form name="contact-form-deptek" className="form-container" action="/thanks" method="POST" data-netlify="true" data-netlify-recaptcha="true">
             <input type="hidden" name="contact-form-deptek" value="contact" />
