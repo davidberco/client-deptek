@@ -50,6 +50,7 @@ const ContactPage = ({
             </div>
             <div style={{display: "flex", justifyContent: "flex-end"}}>
               {/* <button className="button primary"></button> */}
+              
               {/* <input type="" className="button primary" name="input" id="" placeholder=""/> */}
 
               <input type="submit" name="submit" className="button primary" style={{marginRight: 0}} />
