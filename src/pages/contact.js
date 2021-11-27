@@ -31,31 +31,54 @@ const ContactPage = ({
           </div>
         </div>
         <div>
+          <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>Your Name: <input type="text" name="name" /></label>   
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Your Role: <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+
+
+{/* 
           <form name="contact-form-deptek" className="form-container" action="https://formsubmit.co/3a930f605b9d3d0530a4441345f268fc" method="POST" data-netlify="true" data-netlify-recaptcha="true">
             <div>
-              {/* <label htmlFor="w3lName">Name</label> */}
+              <label htmlFor="w3lName">Name</label>
               <input type="text" name="name" id="name" placeholder="Name" data-validation-required-message="Please enter your name." required/>
             </div>
             <div>
-              {/* <label htmlFor="w3lSender">Email</label> */}
+              <label htmlFor="w3lSender">Email</label>
               <input type="email" name="email" id="email" placeholder="Email" required/>
             </div>
             <div>
-              {/* <label htmlFor="w3lSubject">Subject</label> */}
+              <label htmlFor="w3lSubject">Subject</label>
               <input type="text" name="subject" id="w3lSubject" placeholder="Subject" required/>
             </div>
             <div>
-              {/* <label htmlFor="w3lMessage">Message</label> */}
+              <label htmlFor="w3lMessage">Message</label>
               <textarea name="message" id="message" placeholder="Enter here your message..." required></textarea>
             </div>
             <div style={{display: "flex", justifyContent: "flex-end"}}>
-              {/* <button className="button primary"></button> */}
-              
-              {/* <input type="" className="button primary" name="input" id="" placeholder=""/> */}
+              <button className="button primary"></button>
+
+              <input type="" className="button primary" name="input" id="" placeholder=""/>
 
               <input type="submit" name="submit" className="button primary" style={{marginRight: 0}} />
             </div>
-          </form>
+          </form> */}
 
         </div>
       </div>
