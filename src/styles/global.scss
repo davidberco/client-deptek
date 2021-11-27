@@ -133,7 +133,7 @@ a {
   font-weight: 400;
   margin: 0 20px 0 0;
   transition: background-color 0.3s linear;
-  &.-primary {
+  &.primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     color: var(--primary-text-color);
@@ -276,6 +276,7 @@ a {
   }
   input[type='text'],
   input[type='email'],
+  input[type='input'],
   textarea {
     appearance: none;
     border: 1px solid var(--card-shadow);
@@ -322,7 +323,7 @@ a {
   }
   .two-grids {
     display: grid;
-    grid-template-columns: 1fr; // we have 1fr 1fr to show the contact form properly
+    grid-template-columns: 1fr 1fr; // we have 1fr 1fr to show the contact form properly
     grid-gap: 64px;
   }
 }
