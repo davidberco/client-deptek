@@ -53,8 +53,11 @@ const ContactPage = ({
             <textarea name="message"></textarea>
           </form>
 
-          <form name="contact-form-deptek" className="form-container" action="/thanks" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-            <input type="hidden" name="contact-form-deptek" value="contact" />
+          <form name="contact-form-deptek" className="form-container" action="/thanks" method="POST" data-netlify="true" data-netlify-recaptcha="true" honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
             <div>
               <label htmlFor="w3lName">Name</label>
               <input type="text" name="name" id="name" placeholder="Name" data-validation-required-message="Please enter your name." required/>
