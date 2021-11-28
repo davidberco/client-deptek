@@ -2,12 +2,39 @@ import React from "react"
 import Helmet from "react-helmet"
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
+import { navigate } from 'gatsby-link'
+
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
+}  
 
 const ContactPage = ({
   data: {
     site
   },
 }) => {
+  const handleChange = (e) => {
+    setState({ ...state, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const form = e.target
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute('action')))
+      .catch((error) => alert(error))
+  }
+  const [state, setState] = React.useState({})
+
   return (
     <Layout>
       <Helmet>
@@ -31,50 +58,41 @@ const ContactPage = ({
           </div>
         </div>
         <div>
-
-          {/* <!-- A little help for the Netlify post-processing bots --> */}
-          <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-            <input type="text" name="name" />
-            <input type="email" name="email" />
-            <textarea name="message"></textarea>
-          </form>
-
-          <form name="contact-form-deptek" className="form-container" action="" method="POST" data-netlify="true" data-netlify-recaptcha="true" honeypot="bot-field">
-            <input type="hidden" name="form-name" value="contact" />
-            <p class="hidden">
-              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-            </p>
-            <div>
-              <label htmlFor="w3lName">Name</label>
-              <input type="text" name="name" id="name" placeholder="Name" data-validation-required-message="Please enter your name." required/>
-            </div>
-            <div>
-              <label htmlFor="w3lSender">Email</label>
-              <input type="email" name="email" id="email" placeholder="Email" required/>
-            </div>
-            <div>
-              <label htmlFor="w3lSubject">Subject</label>
-              <input type="text" name="subject" id="w3lSubject" placeholder="Subject" required/>
-            </div>
-            <div>
-              <label htmlFor="w3lMessage">Message</label>
-              <textarea name="message" id="message" placeholder="Enter here your message..." required></textarea>
-            </div>
-            <div style={{display: "flex", justifyContent: "flex-end"}}>
-              {/* <button className="button primary"></button> */}
-
-              {/* <input type="" className="button primary" name="input" id="" placeholder=""/> */}
-
-              <input type="submit" name="submit" className="button primary" style={{marginRight: 0}} />
-            </div>
-          </form>
-
+        <form 
+          name="contact-form-deptek" 
+          className="form-container" 
+          action="/thanks" 
+          method="POST" 
+          data-netlify="true" 
+          honeypot="bot-field"
+          onSubmit={handleSubmit}>
+          <input type="hidden" name="form-name" value="contact" />
+          <p className="hidden">
+            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+          </p>
+          <div>
+            <input type="text" name="name" id="name" placeholder="Name" data-validation-required-message="Please enter your name." required onChange={handleChange}/>
+          </div>
+          <div>
+            <input type="email" name="email" id="email" placeholder="Email" required onChange={handleChange}/>
+          </div>
+          <div>
+            <input type="text" name="subject" id="w3lSubject" placeholder="Subject" required onChange={handleChange}/>
+          </div>
+          <div>
+            <textarea name="message" id="message" placeholder="Enter here your message..." required onChange={handleChange}></textarea>
+          </div>
+          <div style={{display: "flex", justifyContent: "flex-end"}}>s
+            <input type="submit" name="submit" className="button primary" style={{marginRight: 0}} />
+          </div>
+        </form>
         </div>
       </div>
     </Layout>
   )
 }
 export default ContactPage
+
 export const pageQuery = graphql`
   query ContactPageQuery{
     site {
