@@ -326,8 +326,11 @@ a {
   }
   .two-grids {
     display: grid;
-    grid-template-columns: 1fr 1fr; // we have 1fr 1fr to show the contact form properly
+    grid-template-columns: 1fr 1fr;
     grid-gap: 64px;
+  }
+  .map {
+    width: inherit;
   }
 }
 
