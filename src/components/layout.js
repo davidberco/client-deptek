@@ -19,7 +19,7 @@ export default ({ children }) => {
     <div className="site-wrapper">
       <header className="site-header">
       <Link to="/">
-        <img className="logo-image" src='/assets/logoOrange@3x.png' alt='logotype-deptek'></img>
+        <img className="logo-image" src='/assets/logoDeptekColorRgb.png' alt='logotype-deptek'></img>
       </Link>
 
         {/* <div className="site-title">
