@@ -82,7 +82,7 @@ const ContactPage = ({
           <div>
             <textarea name="message" id="message" placeholder="Enter here your message..." required onChange={handleChange}></textarea>
           </div>
-          <div style={{display: "flex", justifyContent: "flex-end"}}>s
+          <div style={{display: "flex", justifyContent: "flex-end"}}>
             <input type="submit" name="submit" className="button primary" style={{marginRight: 0}} />
           </div>
         </form>
